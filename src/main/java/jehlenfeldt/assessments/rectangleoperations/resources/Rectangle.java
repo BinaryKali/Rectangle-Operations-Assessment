@@ -35,7 +35,7 @@ public class Rectangle {
     }
 
     private void validateInput(Node upperLeftCorner, Node lowerRightCorner) throws InvalidDimensionsException {
-        if (upperLeftCorner.getXCoordinate() >= lowerRightCorner.getYCoordinate()
+        if (upperLeftCorner.getXCoordinate() >= lowerRightCorner.getXCoordinate()
                 || lowerRightCorner.getYCoordinate() >= upperLeftCorner.getYCoordinate()) {
             throw new InvalidDimensionsException();
         }

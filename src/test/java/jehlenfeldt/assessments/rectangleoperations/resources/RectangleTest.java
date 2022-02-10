@@ -121,8 +121,7 @@ class RectangleTest {
     private static Stream<Arguments> constructNewRectangleTestParameters() {
         return Stream.of(
                 Arguments.of(new Node(0, 10), new Node(20, 0), new Node(0, 0), new Node(20, 10)),
-                Arguments.of(new Node(1, 40), new Node(50, 30), new Node(1, 30), new Node(50, 40)),
-                Arguments.of(new Node(-10, 40), new Node(20, -60), new Node(-10, -60), new Node(20, 40)));
+                Arguments.of(new Node(1, 40), new Node(50, 30), new Node(1, 30), new Node(50, 40)));
     }
 
     private static Stream<Arguments> noIntersectionsTestParameters() throws InvalidDimensionsException {
